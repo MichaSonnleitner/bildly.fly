@@ -2,19 +2,32 @@
 <html lang="de">
 <head>
     <meta charset="UTF-8">
-    <title>Bildly.fly Chat</title>
+    <title>Bildly Chat</title>
     <link rel="stylesheet" href="style.css">
     <script src="script.js" defer></script>
 </head>
 <body>
-    <div class="chat">
-        <div class="messages">
-            <div class="msg ai">Hallo! Ich bin dein Chat.</div>
-        </div>
-        <div class="input-bar">
-            <input type="text" id="userInput" placeholder="Nachricht schreiben…">
-            <button id="sendBtn">Senden</button>
-        </div>
+    <div class="page-content">
+  <div class="chat">
+    <div class="messages" id="messages">
+      <div class="msg ai">Hallo! Ich bin dein Chat.</div>
     </div>
+    <div class="input-bar">
+      <input type="text" id="userInput" placeholder="Nachricht schreiben…">
+      <button id="sendBtn">Senden</button>
+    </div>
+  </div>
+</div>
+
+
+<!-- Pro-Version Overlay -->
+<div id="proOverlay">
+    <div class="proContent">
+        <h2>Pro-Version</h2>
+        <p>Hier gibt’s alle Features für Pro-User!</p>
+        <button id="closePro">Schließen</button>
+    </div>
+</div>
+
 </body>
 </html>
