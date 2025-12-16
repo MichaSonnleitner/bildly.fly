@@ -2,12 +2,19 @@
 <html lang="de">
 <head>
     <meta charset="UTF-8">
-    <title>Bildly.fly</title>
+    <title>Bildly.fly Chat</title>
     <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
 </head>
 <body>
-    <h1>Hallo Welt</h1>
-
-    <script src="script.js"></script>
+    <div class="chat">
+        <div class="messages">
+            <div class="msg ai">Hallo! Ich bin dein Chat.</div>
+        </div>
+        <div class="input-bar">
+            <input type="text" id="userInput" placeholder="Nachricht schreiben…">
+            <button id="sendBtn">Senden</button>
+        </div>
+    </div>
 </body>
 </html>
