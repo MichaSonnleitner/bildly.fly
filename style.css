@@ -153,3 +153,25 @@ body {
   color: #19c37d;
   font-weight: bold;
 }
+
+.discount {
+  margin-top: 20px;
+  display: flex;
+  gap: 8px;
+}
+
+.discount input {
+  flex: 1;
+  padding: 8px;
+  border-radius: 6px;
+  border: none;
+}
+
+.discount button {
+  padding: 8px 12px;
+  border: none;
+  border-radius: 6px;
+  background: #19c37d;
+  color: #000;
+  cursor: pointer;
+}

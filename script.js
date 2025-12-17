@@ -53,3 +53,17 @@ document.querySelectorAll(".new").forEach(el => {
   const discounted = (price * 0.7).toFixed(2);
   el.textContent = discounted + " €";
 });
+
+document.getElementById("applyDiscount").addEventListener("click", () => {
+  const code = document.getElementById("discountCode").value.trim();
+  if (code.toLowerCase() === "FrauKrenn50") {
+    alert("Rabatt aktiviert! 50% Rabatt auf alle Pläne.");
+    document.querySelectorAll(".new").forEach(el => {
+      const price = Number(el.dataset.price);
+      const discounted = (price * 0.5).toFixed(5); // nochmal extra Rabatt 50%
+      el.textContent = discounted + " €";
+    });
+  } else {
+    alert("Ungültiger Code!");
+  }
+});
