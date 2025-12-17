@@ -29,24 +29,27 @@ function sendMessage() {
         messages.scrollTop = messages.scrollHeight;
     }, 500);
 }
-//const cornerBtn = document.getElementById('cornerBtn');
-//const proOverlay = document.getElementById('proOverlay');
-//const closePro = document.getElementById('closePro');
-
-//cornerBtn.addEventListener('click', () => {
-//    proOverlay.style.display = 'flex';
-//});
-
-//closePro.addEventListener('click', () => {
-//    proOverlay.style.display = 'none';
-//});
 
 document.getElementById("openPro").addEventListener("click", () => {
   document.getElementById("proOverlay").style.display = "flex";
 });
 
-document.getElementById("cornerBtn").onclick = () => alert("klick");
+document.addEventListener("DOMContentLoaded", () => {
+  const overlay = document.getElementById("proOverlay");
+  const openBtn = document.getElementById("openPro");
+  const closeBtn = document.getElementById("closePro");
 
-document.getElementById("cornerBtn").addEventListener("click", () => {
-  document.getElementById("proOverlay").style.display = "flex";
+  openBtn.onclick = () => {
+    overlay.style.display = "flex";
+  };
+
+  closeBtn.onclick = () => {
+    overlay.style.display = "none";
+  };
+});
+
+document.querySelectorAll(".new").forEach(el => {
+  const price = Number(el.dataset.price);
+  const discounted = (price * 0.7).toFixed(2);
+  el.textContent = discounted + " €";
 });

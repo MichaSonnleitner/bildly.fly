@@ -63,27 +63,6 @@ body {
     background: #19c37d;
     cursor: pointer;
 }
-/* Runder Button */
-#cornerBtn {
-    position: absolute;
-    top: 10px;
-    right: 10px;
-    width: 40px;
-    height: 40px;
-    background: #f5a623;
-    border: none;
-    border-radius: 50%;
-    cursor: pointer;
-    font-size: 20px;
-    color: #000;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    box-shadow: 0 2px 5px rgba(0,0,0,0.3);
-    transition: background 0.2s;
-}
-
-#cornerBtn:hover { background: #e5941e; }
 
 /* Overlay */
 #proOverlay {
@@ -110,11 +89,6 @@ body {
     border-radius: 6px;
     background: #19c37d;
     cursor: pointer;
-}
-
-#cornerBtn {
-    position: fixed;   /* nicht absolute */
-    z-index: 9999;     /* ganz nach oben */
 }
 
 .plans {
@@ -144,4 +118,38 @@ body {
   .plans {
     flex-direction: column;
   }
+}
+
+#proOverlay {
+    z-index: 10000;
+}
+
+.proContent {
+    pointer-events: auto;
+}
+
+#proOverlay {
+    pointer-events: auto;
+}
+
+#proOverlay {
+    display: none;
+    position: fixed;
+    inset: 0;
+    background: rgba(0,0,0,0.7);
+    justify-content: center;
+    align-items: center;
+    z-index: 10000;
+}
+
+.old {
+  color: #FF0000; /* Textfarbe */
+  text-decoration: line-through; /* Durchgestrichen */
+  text-decoration-color: #FF0000; /* Farbe der Linie */
+  margin-right: 6px;
+}
+	
+.new {
+  color: #19c37d;
+  font-weight: bold;
 }
