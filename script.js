@@ -60,7 +60,7 @@ document.getElementById("applyDiscount").addEventListener("click", () => {
     alert("Rabatt aktiviert! 50% Rabatt auf alle Pläne.");
     document.querySelectorAll(".new").forEach(el => {
       const price = Number(el.dataset.price);
-      const discounted = (price * 0.5).toFixed(2); // nochmal extra Rabatt 50%
+      const discounted = (price * 0.2).toFixed(2); // nochmal extra Rabatt 50%
       el.textContent = discounted + " €";
     });
   } else {
