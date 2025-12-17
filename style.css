@@ -111,3 +111,37 @@ body {
     background: #19c37d;
     cursor: pointer;
 }
+
+#cornerBtn {
+    position: fixed;   /* nicht absolute */
+    z-index: 9999;     /* ganz nach oben */
+}
+
+.plans {
+  display: flex;
+  gap: 16px;
+}
+
+.plan {
+  background: #343541;
+  padding: 16px;
+  border-radius: 10px;
+  width: 140px;
+}
+
+.plan button {
+  width: 100%;
+  margin-top: 10px;
+  background: #19c37d;
+  border: none;
+  padding: 8px;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+/* Handy */
+@media (max-width: 600px) {
+  .plans {
+    flex-direction: column;
+  }
+}

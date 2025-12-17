@@ -44,3 +44,9 @@ function sendMessage() {
 document.getElementById("openPro").addEventListener("click", () => {
   document.getElementById("proOverlay").style.display = "flex";
 });
+
+document.getElementById("cornerBtn").onclick = () => alert("klick");
+
+document.getElementById("cornerBtn").addEventListener("click", () => {
+  document.getElementById("proOverlay").style.display = "flex";
+});
