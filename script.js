@@ -29,15 +29,18 @@ function sendMessage() {
         messages.scrollTop = messages.scrollHeight;
     }, 500);
 }
-const cornerBtn = document.getElementById('cornerBtn');
-const proOverlay = document.getElementById('proOverlay');
-const closePro = document.getElementById('closePro');
+//const cornerBtn = document.getElementById('cornerBtn');
+//const proOverlay = document.getElementById('proOverlay');
+//const closePro = document.getElementById('closePro');
 
-cornerBtn.addEventListener('click', () => {
-    proOverlay.style.display = 'flex';
+//cornerBtn.addEventListener('click', () => {
+//    proOverlay.style.display = 'flex';
+//});
+
+//closePro.addEventListener('click', () => {
+//    proOverlay.style.display = 'none';
+//});
+
+document.getElementById("openPro").addEventListener("click", () => {
+  document.getElementById("proOverlay").style.display = "flex";
 });
-
-closePro.addEventListener('click', () => {
-    proOverlay.style.display = 'none';
-});
-
